@@ -3,9 +3,13 @@
 body {
     padding: 0;
     margin: 0;
-    background: #f2f6e9;
+    background-color: rgba(0, 0, 0, 0);
 }
 
+/* adding a background color */
+.bodybkg {
+     background-color: rgb(236, 255, 190);
+}
 .navbar {
     background: #6ab446;
 }
@@ -16,13 +20,18 @@ body {
     cursor: pointer;
 }
 
+
+.navbar-brand:hover{
+    color: rgba(0, 0, 0, 0);
+}
+
 .nav-link {
     margin-right: 1em !important;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
     color: #000;
-}
+} */
 
 .navbar-collapse {
     justify-content: flex-end;
@@ -155,4 +164,50 @@ body {
     font-size: 1.3rem;
     margin-bottom: 0;
     text-transform: uppercase;
+}
+
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+/* media qs */
+
+@media (max-width: 991.98px) {
+    .team {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .team {
+        max-width: 60%;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        margin: 0;
+    }
 }
